@@ -1,2 +1,2 @@
 # zeus-restaurant
-School project - HTML, CSS/SCSS, JavaScript with graphic design made in Figma
+School project - HTML, SCSS, JavaScript with graphic design made in Figma
