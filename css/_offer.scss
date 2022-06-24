@@ -1,0 +1,60 @@
+section.our_offer {
+  padding-top: 6em;
+  padding-bottom: 3em;
+
+  header {
+    h1 {
+      height: 80px;
+      @media all and (max-width: 476px) {
+        padding-bottom: 2em;
+      }
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+    }
+
+    h4 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      padding-left: 23em;
+      padding-bottom: 2em;
+
+      @media all and (max-width: 476px) {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    padding-top: 5em;
+
+    div.images {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 3em;
+    }
+
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 2em;
+      color: $darkgray;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}

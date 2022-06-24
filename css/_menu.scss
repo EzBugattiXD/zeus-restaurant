@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+section.menu {
+  padding-top: 3em;
+  display: flex;
+  background: $bg-gray;
+  height: auto;
+  min-height: 1500px;
+  padding-bottom: 2em;
+
+  div.row {
+    @media all and (max-width: 574px) {
+      gap: 2em;
+    }
+  }
+
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+
+    @media all and (max-width: 476px) {
+      padding-bottom: 2em;
+    }
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.header {
+    display: flex;
+    justify-content: center;
+    padding-left: 15em;
+    padding-bottom: 2em;
+
+    @media all and (max-width: 476px) {
+      display: none;
+    }
+  }
+
+  div.row {
+    padding-top: 3em;
+
+    div.menu-tablet {
+      @media all and (max-width: 990px) {
+        display: none;
+      }
+    }
+
+    div.menu-mobile {
+      @media all and (max-width: 766px) {
+        display: none;
+      }
+    }
+  }
+
+
+  div.card {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-bottom: 1em;
+    transition: ease-in 0.3s;
+
+
+    &:hover {
+      transform: scale(1.03) translateY(5px);
+      transition: ease-out 0.3s;
+    }
+
+    div.price {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    h5 {
+      font-family: Oleo Script Swash Caps;
+      font-size: 24px;
+      font-weight: 400;
+      padding-top: 8px;
+    }
+
+    p {
+      color: $menu-text;
+      font-weight: 400;
+      font-size: 12px;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    button {
+      background-color: $lightgreen;
+      border-radius: 13.5px;
+      width: 82px;
+      height: 27px;
+      border: none;
+
+
+      a {
+        font-weight: 400;
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    img.card-img-top {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
+    }
+
+  }
+}
+
+div.bottom-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+
+
+  button {
+    background-color: $lightgreen;
+    border: none;
+    border-radius: 53px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
+    width: 270px;
+    height: 90px;
+    transition: ease-in 0.3s;
+
+    &:hover {
+      transform: scale(1.05) translateY(5px);
+      transition: ease-out 0.3s;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1C1C1C;
+      font-weight: 700;
+      font-size: 18px;
+
+
+    }
+  }
+}
+
+

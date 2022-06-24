@@ -1,0 +1,92 @@
+nav.navigation {
+  display: flex;
+  justify-content: end;
+  height: 80px;
+  width: 100%;
+  padding-top: 2em;
+  padding-right: 1em;
+
+
+  div.hamburger {
+    display: none;
+    cursor: pointer;
+
+    span.bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background-color: #1C1C1C;
+    }
+  }
+
+  @media all and (max-width: 1084px) {
+    div.hamburger {
+      display: block;
+      z-index: 2;
+      padding: 2em;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    ul.mainMenu {
+      position: absolute;
+      left: -1200px;
+      top: -10px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #8DC561;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      gap: 1em;
+      justify-content: center;
+      height: 500px;
+      z-index: 1;
+    }
+    ul.mainMenu.active {
+      left: 0px;
+
+    }
+  }
+
+
+  ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+
+    li {
+
+
+      a {
+        color: $black;
+        padding: 1em 2em;
+        transition: background-color 1s;
+        border-radius: 50px;
+
+        &:link, &:visited {
+          text-decoration: none;
+          color: $black;
+        }
+
+        &:hover {
+          background-color: $lightgreen;
+
+          @media all and (max-width: 1084px) {
+            background-color: $yellow;
+          }
+
+        }
+      }
+    }
+  }
+}
